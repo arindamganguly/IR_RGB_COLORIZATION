@@ -1,0 +1,20 @@
+import numpy as np
+from PIL import Image
+import os
+
+# folders
+os.makedirs("data/train/ir", exist_ok=True)
+os.makedirs("data/train/rgb", exist_ok=True)
+
+for i in range(50):
+
+    img = np.random.randint(0, 255, (256,256), dtype=np.uint8)
+
+    ir = Image.fromarray(img)
+    rgb = np.stack([img, img, img], axis=2)
+    rgb = Image.fromarray(rgb)
+
+    ir.save(f"data/train/ir/{i}.png")
+    rgb.save(f"data/train/rgb/{i}.png")
+
+print("Dataset ready")
