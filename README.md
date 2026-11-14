@@ -44,7 +44,7 @@ Convert infrared satellite images into realistic RGB representations using **Pix
 
 * HTML5
 * CSS3
-* JavaScript
+* JavaScript(JS)
 
 🔵 **Backend**
 
@@ -61,7 +61,6 @@ Convert infrared satellite images into realistic RGB representations using **Pix
 🔵 **Image Processing**
 
 * Pillow (PIL)
-* Torchvision
 
 ---
 
